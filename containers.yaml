@@ -1,7 +1,7 @@
-version: v1beta2
+version: latest
 containers:
-- name: outyet
-  image: adg1/outyet
+- name: gotest1
+  image: mjwrazor/gotest1
   ports:
   - name: http
     hostPort: 80
