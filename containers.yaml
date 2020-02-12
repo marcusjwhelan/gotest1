@@ -1,8 +1,0 @@
-version: latest
-containers:
-- name: gotest1
-  image: mjwrazor/gotest1
-  ports:
-  - name: http
-    hostPort: 80
-    containerPort: 8080

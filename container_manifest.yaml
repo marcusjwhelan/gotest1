@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gotest1
+  labels:
+    name: gotest1
+spec:
+  containers:
+  - name: gotest1
+    image: mjwrazor/gotest1
+    imagePullPolicy: Always
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - name: http
+        hostPort: 80
+        containerPort: 8080
